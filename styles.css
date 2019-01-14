@@ -1,0 +1,61 @@
+.detailed-crt-img {
+    width: 270px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.phone-block {
+    height: 16px;
+}
+
+#vue.modal {
+    display: block;
+}
+
+
+/*Animations*/
+/* *-enter */          /* *-leave */
+/* *-enter-active */   /* *-leave-active */
+/* *-enter-to */       /* *-leave-to */
+
+.phone-enter-active, .phone-leave-active{
+    transition: all .5s;
+}
+.phone-enter, .phone-leave-to{
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+#vue.modal-enter-active, #vue.modal-leave-active{
+    transition: all .5s;
+}
+#vue.modal-enter, #vue.modal-leave-to{
+    transform: translateY(-100px);
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+.fade-vue-enter-active{
+    animation: .75s fade-vue forwards;
+}
+.fade-vue-leave-active{
+    animation: .75s fade-vue reverse;
+}
+.fade-vue-enter, .fade-vue-leave-to{
+    opacity: 0;
+}
+.modal-backdrop{
+    opacity: .5;
+}
+@keyframes fade-vue {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .5;
+    }
+}
+
